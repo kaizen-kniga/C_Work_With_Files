@@ -1,0 +1,7 @@
+Test output
+Sorted version:
+Astana - 1 (kg)
+Almaty - 2 (kg)
+Taldykorgan - 19 (kg)
+Aktobe - 22 (kg)
+Ekybastuz - 51 (kg)

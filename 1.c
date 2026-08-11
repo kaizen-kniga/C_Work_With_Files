@@ -62,6 +62,23 @@ int main(void){
 		printf("%s - %d (kg)\n", salt[i].name, salt[i].mass);
 	}
 	
+	//Write output into "output.txt"
+	
+	FILE *fpw;
+	
+	fpw = fopen("output.txt", "w");
+	
+	fputs("Test output\n", fpw);
+	fputs("Sorted version:", fpw);
+	fputc('\n', fpw);
+	
+	for(int i=0;i<stuff_size;i++){
+		fprintf(fpw, "%s - %d (kg)\n", salt[i].name, salt[i].mass);
+	}
+	
+	fclose(fp);
+	fclose(fpw);
+	
 	getchar();
 	return 0;
 }
